@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cadastro de Pokemon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -13,14 +17,16 @@
   <form style="text-align: center;">
     <label>
       <p>Descrição:</p>
-      <textarea name="comentario" id="comentarios" cols="30" rows="10" maxlength="10"></textarea>
+      <textarea name="comentario" id="comentarios" cols="30" rows="10" maxlength="255"></textarea>
     </label>
     <p></p>
-    <label>Número:
+    <label>
+      Número:
       <input type="number">
     </label>
     <p></p>
-    <label>Nome:
+    <label>
+      Nome:
       <input type="">
     </label>
     <p></p>
@@ -108,20 +114,20 @@
     <p></p>
     <label>Lendário:
       <input type="radio" name="lendario" id="sim" checked>
-      <label for="vermelho">Sim</label>
+      <label for="Sim">Sim</label>
       <input type="radio" name="lendario" id="nao" checked>
-      <label for="vermelho">Não</label>
+      <label for="Não">Não</label>
     </label>
     <p></p>
     <label>Cor:
       <select name="cor">
         <option value="amarelo">Amarelo</option>
-        <option value="azul">Azul"</option>
+        <option value="azul">Azul</option>
         <option value="branco">Branco</option>
         <option value="cinza">Cinza</option>
         <option value="marrom">Marrom</option>
         <option value="preto">Preto</option>
-        <option value="rosa">Rosa></option>
+        <option value="rosa">Rosa</option>
         <option value="roxo">Roxo</option>
         <option value="verde">Verde</option>
         <option value="vermelho">Vermelho</option>
@@ -139,6 +145,8 @@
     <label>Taxa de Captura:
       <input type="number" min="0" max="255">
     </label>
+    <p></p>
+    <input type="button" value="Registrar">
   </form>
 </body>
 
