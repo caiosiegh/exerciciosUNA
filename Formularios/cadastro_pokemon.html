@@ -9,28 +9,32 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 
 <body>
-  <h1 style="text-align: center;">Cadastro de Pokémons</h1>
+  <header>
+    <h1>Cadastro de Pokémons</h1>
+    <h2><a href="pokemon_cadastrados.html">Pokémons Cadastrados</a></h2>
+  </header>
 
   <form style="text-align: center;">
-    <label>
+    <label id="descricao">
       <p>Descrição:</p>
-      <textarea name="comentario" id="comentarios" cols="30" rows="10" maxlength="255"></textarea>
+      <textarea name="comentario" id="descricao" cols="30" rows="10" maxlength="255"></textarea>
     </label>
     <p></p>
-    <label>
+    <label id="num">
       Número:
       <input type="number">
     </label>
     <p></p>
-    <label>
+    <label id="name">
       Nome:
       <input type="">
     </label>
     <p></p>
-    <label>Tipo1:
+    <label id="type1">Tipo1:
       <select name="tipo" id="tipo">
         <option value="aço">Aço</option>
         <option value="agua">Água</option>
@@ -53,7 +57,7 @@
       </select>
     </label>
     <p></p>
-    <label>Tipo2:
+    <label id="type2">Tipo2:
       <select name="tipo" id="tipo">
         <option value="aço">Aço</option>
         <option value="agua">Água</option>
@@ -76,31 +80,31 @@
       </select>
     </label>
     <p></p>
-    <label>Ataque:
+    <label id="atk">Ataque:
       <input type="number">
     </label>
     <p></p>
-    <label>Defesa:
+    <label id="def">Defesa:
       <input type="number">
     </label>
     <p></p>
-    <label>Ataque Especial:
+    <label id="atk-special">Ataque Especial:
       <input type="number">
     </label>
     <p></p>
-    <label>Defesa Especial:
+    <label id="def-special">Defesa Especial:
       <input type="number">
     </label>
     <p></p>
-    <label>Velocidade:
+    <label id="velocity">Velocidade:
       <input type="number">
     </label>
     <p></p>
-    <label>Total:
+    <label id="total">Total:
       <input type="number">
     </label>
     <p></p>
-    <label>Geração Introduzida:
+    <label id="generation">Geração Introduzida:
       <select name="geracao">
         <option value="1">1</option>
         <option value="2">2</option>
@@ -112,14 +116,14 @@
       </select>
     </label>
     <p></p>
-    <label>Lendário:
+    <label id="legendary">Lendário:
       <input type="radio" name="lendario" id="sim" checked>
       <label for="Sim">Sim</label>
       <input type="radio" name="lendario" id="nao" checked>
       <label for="Não">Não</label>
     </label>
     <p></p>
-    <label>Cor:
+    <label id="color">Cor:
       <select name="cor">
         <option value="amarelo">Amarelo</option>
         <option value="azul">Azul</option>
@@ -134,19 +138,19 @@
       </select>
     </label>
     <p></p>
-    <label>Altura:
+    <label id="height">Altura:
       <input type="number">
     </label>
     <p></p>
-    <label>Peso:
+    <label id="weight">Peso:
       <input type="number">
     </label>
     <p></p>
-    <label>Taxa de Captura:
+    <label id="tx-capture">Taxa de Captura:
       <input type="number" min="0" max="255">
     </label>
     <p></p>
-    <input type="button" value="Registrar">
+    <input type="button" value="Registrar" onclick="cadastroPokemon()">
   </form>
 </body>
 
