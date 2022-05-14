@@ -1,6 +1,6 @@
 function pesquisarCEP() {
     //Criando uma variável para armazenar o valor do CEP no Input do HTML
-    let procurarCEP = document.getElementById("name").value
+    let procurarCEP = document.getElementById("cep").value
     //Função para consumir a API do viacep, colocando a variável "procurarCEP" no link da API
     fetch(`https://viacep.com.br/ws/${procurarCEP}/json/`)
         .then(response => response.json())
